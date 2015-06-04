@@ -85,7 +85,7 @@ var arrOne = [99, 0 , 124, 37, -14, 10, 0.2547, -54, 11, 999];
 var sortSelection = function (arrOne) {
 	var minimal, 
 	tempStorage;
-	for (var i = 0; i < arrOne.length; i++) {
+	for (var i = 0; i < arrOne.length; i+=1) {
 		minimal = i;
 		for (var y = i + 1 ; y < arrOne.length; y++) {
 			if (arrOne[y] > arrOne[minimal]) {
@@ -132,7 +132,8 @@ console.log('END Problem 006 tests');
 console.log('=============');
 console.log('=============');
 console.log('START Problem 007 tests');
-// using a recurssion to start again with the sliced in half arr until the arr.lenght is 0
+
+// using a recurssion to start again with the sliced in half arr until the arr.lenght
 var binarySearch = function(arr, num) {
   var half = Math.floor(arr.length / 2);
   if (arr.length === 0) return "Number "+num+" not found";
